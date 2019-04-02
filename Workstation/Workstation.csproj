@@ -59,6 +59,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnConfigTable.cs" />
     <Compile Include="Runner.cs" />
     <Compile Include="Tester.cs" />
     <EmbeddedResource Include="Form1.resx">

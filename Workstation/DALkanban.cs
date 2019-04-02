@@ -16,6 +16,29 @@ namespace Workstation
 
 
 
+    public void TestLampsRowDAL()
+    {
+        try
+        {
+            using (var cmd = new SqlCommand("STORED_PROCEDURE_NAME", ConnectionStringKanban.Conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                //  cmd.Parameters.Add("@ruleName", SqlDbType.VarChar).Value = rule;
+
+
+                ConnectionStringKanban.Conn.Open();
+                cmd.ExecuteNonQuery();
+                ConnectionStringKanban.Conn.Close();
+                //retValue = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+
+        }
+    }
 
 
 
@@ -30,7 +53,10 @@ namespace Workstation
 
 
 
-    public void AddNewLampRowDAL()
+
+
+
+        public void AddNewLampRowDAL()
     {
             try
             {
@@ -59,6 +85,32 @@ namespace Workstation
 
 
 
+        public DataTable SubtractItemsInBinDAL()
+        {
+            DataTable dt = new DataTable();
+            const string query = @"";
+            try
+            {
+                using (var command = new SqlCommand(query, ConnectionStringKanban.Conn))
+                {
+                    ConnectionStringKanban.Conn.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        dt.Load(reader);
+                    }
+                    ConnectionStringKanban.Conn.Close();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+
+            return dt;
+
+        }
 
 
 
@@ -66,7 +118,11 @@ namespace Workstation
 
 
 
-        public DataTable GetNumberItemsInBin()
+
+
+
+
+        public DataTable GetNumberItemsInBinDAL()
         {
             DataTable dt = new DataTable();
             const string query = @"";

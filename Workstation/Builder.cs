@@ -26,7 +26,7 @@ namespace Workstation
         {
             if(lampsInTray > 60)
             {
-                //Tester test = new Tester();
+                Tester test = new Tester();
             }
             else
             {

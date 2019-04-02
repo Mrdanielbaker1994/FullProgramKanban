@@ -27,11 +27,7 @@ namespace Workstation
        
         public static DataTable GetConfigTable
         {
-            get
-            {
-                return ConfigDataTable;
-            }
-
+            get => ConfigDataTable;           
         }
 
 

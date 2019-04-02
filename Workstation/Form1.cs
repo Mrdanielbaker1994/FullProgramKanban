@@ -24,15 +24,15 @@ namespace Workstation
 
             */
 
-            //var configFileProcess = new Process
-            //{
-            //    StartInfo = new ProcessStartInfo
-            //    {
-            //        FileName = "ConfigurationFile.exe"
-            //    }
-            //};
-            //configFileProcess.Start();
-            //configFileProcess.WaitForExit();
+            var configFileProcess = new Process
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "ConfigurationFile.exe"
+                }
+            };
+            configFileProcess.Start();
+            configFileProcess.WaitForExit();
 
 
 
@@ -60,11 +60,11 @@ namespace Workstation
 
 
             PopulateEmployeeTypeForm();
-            RefreshBinForm();
+            //RefreshBinForm();
             /* This is to initially to call the configuration table and make it accessible via a data table */
             ReturnConfigTable.FillConfigTable();
-            /* this will return the data table */
-            //DataTable test = ReturnConfigTable.GetConfigTable;
+
+
 
 
 
@@ -78,6 +78,8 @@ namespace Workstation
         {
             Runner runner = new Runner();
             Builder builder = new Builder();
+            runner.SetTimeInterval();
+            string timeInterval = runner.GetTimeInterval;
 
 
 
@@ -92,7 +94,7 @@ namespace Workstation
         public void RefreshBinForm()
         {
             DALkanban workbin = new DALkanban();
-            DataTable workbinDataTable = workbin.GetNumberItemsInBin();
+            DataTable workbinDataTable = workbin.GetNumberItemsInBinDAL();
             setBinColors(workbinDataTable);
 
         }
