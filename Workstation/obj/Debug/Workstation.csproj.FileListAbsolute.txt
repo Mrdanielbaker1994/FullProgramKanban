@@ -1,0 +1,14 @@
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\bin\Debug\Workstation.exe.config
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\bin\Debug\Workstation.exe
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\bin\Debug\Workstation.pdb
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\bin\Debug\ConfigurationFile.exe
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\bin\Debug\ConfigurationFile.pdb
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\bin\Debug\ConfigurationFile.exe.config
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\obj\Debug\Workstation.csprojAssemblyReference.cache
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\obj\Debug\Workstation.Properties.Resources.resources
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\obj\Debug\Workstation.csproj.GenerateResource.cache
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\obj\Debug\Workstation.csproj.CoreCompileInputs.cache
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\obj\Debug\Workstation.csproj.CopyComplete
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\obj\Debug\Workstation.exe
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\obj\Debug\Workstation.pdb
+C:\Users\DanielBaker\Desktop\notshit\ConfigurationFile\Workstation\obj\Debug\Workstation.WorkstationForm.resources
