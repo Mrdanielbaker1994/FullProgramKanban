@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Workstation
 {
-    class employeeClass
+    class EmployeeClass
     {
 
         private String[] SkillLevelArray = new string[3] { "Skilled", "Junior", "Unskilled" };

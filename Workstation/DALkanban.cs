@@ -30,7 +30,29 @@ namespace Workstation
 
 
 
+    public void AddNewLampRowDAL()
+    {
+            try
+            {
+                using (var cmd = new SqlCommand("STORED_PROCEDURE_NAME", ConnectionStringKanban.Conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
 
+                  //  cmd.Parameters.Add("@ruleName", SqlDbType.VarChar).Value = rule;
+
+
+                    ConnectionStringKanban.Conn.Open();
+                    cmd.ExecuteNonQuery();
+                    ConnectionStringKanban.Conn.Close();
+                    //retValue = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+
+            }
+        }
 
 
 

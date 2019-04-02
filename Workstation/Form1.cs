@@ -55,9 +55,16 @@ namespace Workstation
 
         private void WorkstationForm_Load(object sender, EventArgs e)
         {
+
+
+
+
             PopulateEmployeeTypeForm();
             RefreshBinForm();
-            GetConfigTable();
+            /* This is to initially to call the configuration table and make it accessible via a data table */
+            ReturnConfigTable.FillConfigTable();
+            /* this will return the data table */
+            //DataTable test = ReturnConfigTable.GetConfigTable;
 
 
 
@@ -67,23 +74,19 @@ namespace Workstation
 
         }
 
-
-
-
-
-        public void GetConfigTable()
+        public void InitializeProgramFlow()
         {
-
-            /* 
-
-            we are getting the configuration table from the other solution named 'ConfigurationFile'
-
-            */
+            Runner runner = new Runner();
+            Builder builder = new Builder();
 
 
-            DataAccessLayerConfigFile PtrConfigSolution = new DataAccessLayerConfigFile();
-            DataTable configDataTable = PtrConfigSolution.GetConfigTable();
+
+
         }
+
+
+
+
 
 
         public void RefreshBinForm()
@@ -223,7 +226,7 @@ namespace Workstation
 
         public void PopulateEmployeeTypeForm()
         {
-            employeeClass employeeGenerate = new employeeClass();
+            EmployeeClass employeeGenerate = new EmployeeClass();
             string valueToPrint = employeeGenerate.returnEmployeeType();
             EmployeeTypeLbl.Text = "Employee Type: " + valueToPrint;
         }
